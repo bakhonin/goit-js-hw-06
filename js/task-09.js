@@ -7,8 +7,8 @@ function getRandomHexColor() {
 const duvEl= document.querySelector('.widget');
 const spanEl = document.querySelector('.color');
 const btnEl = document.querySelector('.change-color');
-console.log(getRandomHexColor())
+
 btnEl.addEventListener('click', () => {
   spanEl.textContent = getRandomHexColor();
-  duvEl.parentNode.style.backgroundColor = getRandomHexColor();
+  duvEl.parentNode.style.backgroundColor = spanEl.textContent;
 })
