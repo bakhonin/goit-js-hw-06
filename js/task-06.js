@@ -1,9 +1,11 @@
 const borderInputEl = document.querySelector('#validation-input');
 
 borderInputEl.addEventListener('blur', (event) => {
-    if (event.currentTarget.value.trim().length === +borderInputEl.getAttribute('data-length')){
-    borderInputEl.classList.add('valid') && borderInputEl.classList.remove('invalid')
+    if (event.currentTarget.value.trim().length === Number(borderInputEl.getAttribute('data-length'))){
+    borderInputEl.classList.add('valid') 
+    borderInputEl.classList.remove('invalid')
 }else {
-     borderInputEl.classList.add('invalid') && borderInputEl.classList.remove('valid');}
+     borderInputEl.classList.add('invalid') 
+      borderInputEl.classList.remove('valid');}
 }
 );
